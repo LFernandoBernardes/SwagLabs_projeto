@@ -1,8 +1,45 @@
+import LoginPage from "../pages/loginpage"
+
+const loginPage = new LoginPage()
+
 describe('template spec', () => {
-  it('Login', () => {
-    cy.visit('https://www.saucedemo.com/v1/index.html')
-    cy.get('[data-test="username"]').type('standard_user')
-    cy.get('[data-test="password"]').type('secret_sauce')
-    cy.get('#login-button').click()
+
+  beforeEach(() =>{
+    loginPage.accessLoginPage()
+  
   })
+
+  it('Title Swag Labs', () =>{
+    loginPage.accessLoginPage()
+    cy.title().should('be.equal', 'Swag Labs')
+
+  })
+  
+
+  it('Login {standar_user}', () => {
+    loginPage.loginSuccessUser('standard_user','secret_sauce')
+  
+  })
+
+it('Login {locked_out_user}', () => {
+  loginPage.loginLockedUser('locked_out_user', 'secret_sauce')
+})
+
+it('Login {problem_user}', () => {
+  loginPage.loginSuccessUser('problem_user','secret_sauce')
+})
+
+it('Login {performance_glitch_user}', () => {
+  loginPage.loginSuccessUser('performance_glitch_user','secret_sauce')
+})
+
+it('Invalid Login Wrong Username', () =>{
+  loginPage.loginInvalid('Wrong_user', 'secret_sauce')
+})
+
+it('Invalid Login Wrong Password', () =>{
+  loginPage.loginInvalid('standard_user', 'sauce')
+})
+
+
 })
