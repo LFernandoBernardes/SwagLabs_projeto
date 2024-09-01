@@ -17,8 +17,8 @@ describe('login standard_user', () => {
   
   })
 
-it('Realizar uma compra - Smoke Test', () =>{
-  productspage.selectOneProdut()
+it('Realizar uma compra Sauce Labs Backpack - Smoke Test', () =>{
+  productspage.backpack_ADD()
   cartlistpage.checkCart()
   formulariopage.formularioComplete('luiz','fernando','90556105')
   cartlistpage.cartOverviewCheck()
@@ -39,6 +39,19 @@ it('Comprar mais de um produto checar os valores', () => {
     productspage.bike_Light_Details()
     productspage.bolt_TShirt_Details()
     cartlistpage.valeuOverviewCheck3produtos()
+
+})
+
+it.only('Remover um produto do Carrinho', () =>{
+    productspage.backpack_ADD()
+    productspage.bike_Light_ADD()
+    productspage.bolt_TShirt_ADD()
+    cartlistpage.visitCart()
+    cartlistpage.visitOverview()
+    formulariopage.formularioComplete('Fernando','Bernardes','90456185')
+    productspage.backpack_REMOVE_on_Overview()
+    cartlistpage.valeuOverviewAfeterRemove()
+
 
 })
 

@@ -59,6 +59,15 @@ class CartListPage {
 
     }
 
+    valeuOverviewAfeterRemove(){
+        cy.get(this.selectorsList().cartList).should('be.visible')
+        cy.get(this.selectorsList().itemTotal).should('be.visible','$25.98')
+        cy.get(this.selectorsList().totalPrice).should('be.visible','$28.06')
+        cy.get(this.selectorsList().checkoutButton).click()
+        cy.get(this.selectorsList().completeContainer).should('be.visible')       
+
+    }
+
 }
 
 export default CartListPage

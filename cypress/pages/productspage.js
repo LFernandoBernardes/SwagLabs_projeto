@@ -46,6 +46,14 @@ class ProductsPage {
 
     }
 
+    backpack_REMOVE_on_Overview(){
+        cy.get(this.selectorsList().nameProduct).eq(0).should('be.visible', 'Sauce Labs Backpack').click()
+        cy.get(this.selectorsList().detalhesProduto).should('be.visible', 'Sauce Labs Backpack')
+        cy.get(this.selectorsList().detalhesPreço).should('be.visible', '$29.99')
+        cy.get(this.selectorsList().buttonProduct).eq(0).click()
+        cy.get(this.selectorsList().backButton).click()
+    }
+
 
     bike_Light_Details(){
         cy.get(this.selectorsList().nameProduct).eq(1).should('be.visible', 'Bike Light').click()
