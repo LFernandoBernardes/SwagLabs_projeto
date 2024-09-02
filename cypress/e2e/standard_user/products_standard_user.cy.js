@@ -9,7 +9,7 @@ const productspage = new ProductsPage()
 const formulariopage = new FormularioPage()
 const cartlistpage = new CartListPage()
 
-describe('login standard_user', () => {
+describe('Products standard_user', () => {
 
   beforeEach(() =>{
     loginPage.accessLoginPage()

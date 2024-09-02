@@ -2,7 +2,7 @@ import LoginPage from "../pages/loginpage"
 
 const loginPage = new LoginPage()
 
-describe('template spec', () => {
+describe('Pagina Login', () => {
 
   beforeEach(() =>{
     loginPage.accessLoginPage()

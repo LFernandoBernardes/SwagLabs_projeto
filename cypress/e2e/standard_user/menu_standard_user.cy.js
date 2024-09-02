@@ -4,7 +4,7 @@ import BarraMenu from "../../pages/barramenu";
 const loginPage = new LoginPage()
 const barramenu = new BarraMenu()
 
-describe('login standard_user', () => {
+describe('Barra Menu standard_user', () => {
 
     beforeEach(() =>{
       loginPage.accessLoginPage()

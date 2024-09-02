@@ -9,7 +9,7 @@ const productspage = new ProductsPage()
 const formulariopage = new FormularioPage()
 const cartlistpage = new CartListPage()
 
-describe('login problem_user', () => {
+describe('Smoke - Comprar Produtos - problem_user', () => {
 
   beforeEach(() =>{
     loginPage.accessLoginPage()
