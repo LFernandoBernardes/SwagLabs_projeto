@@ -27,8 +27,8 @@ class ProductsPage {
     
     backpack_Details(){
         cy.get(this.selectorsList().nameProduct).eq(0).should('be.visible', 'Sauce Labs Backpack').click()
-        cy.get(this.selectorsList().detalhesProduto).should('be.visible', 'Sauce Labs Backpack')
-        cy.get(this.selectorsList().detalhesPreço).should('be.visible', '$29.99')
+        cy.get(this.selectorsList().detalhesProduto).should('be.visible').contains('Sauce Labs Backpack')
+        cy.get(this.selectorsList().detalhesPreço).should('be.visible').contains('$29.99')
         cy.get(this.selectorsList().backButton).click()
     }
 
@@ -48,8 +48,8 @@ class ProductsPage {
 
     backpack_REMOVE_on_Overview(){
         cy.get(this.selectorsList().nameProduct).eq(0).should('be.visible', 'Sauce Labs Backpack').click()
-        cy.get(this.selectorsList().detalhesProduto).should('be.visible', 'Sauce Labs Backpack')
-        cy.get(this.selectorsList().detalhesPreço).should('be.visible', '$29.99')
+        cy.get(this.selectorsList().detalhesProduto).should('be.visible').contains('Sauce Labs Backpack')
+        cy.get(this.selectorsList().detalhesPreço).should('be.visible').contains('$29.99')
         cy.get(this.selectorsList().buttonProduct).eq(0).click()
         cy.get(this.selectorsList().backButton).click()
     }
@@ -57,8 +57,8 @@ class ProductsPage {
 
     bike_Light_Details(){
         cy.get(this.selectorsList().nameProduct).eq(1).should('be.visible', 'Bike Light').click()
-        cy.get(this.selectorsList().detalhesProduto).should('be.visible', 'Sauce Labs Bike Light')
-        cy.get(this.selectorsList().detalhesPreço).should('be.visible', '$9.99')
+        cy.get(this.selectorsList().detalhesProduto).should('be.visible').contains('Sauce Labs Bike Light')
+        cy.get(this.selectorsList().detalhesPreço).should('be.visible').contains('$9.99')
         cy.get(this.selectorsList().backButton).click()
 
     }
@@ -87,16 +87,16 @@ class ProductsPage {
 
     bolt_TShirt_Details(){
         cy.get(this.selectorsList().nameProduct).eq(2).should('be.visible', 'Sauce Labs Bolt T-Shirt').click()
-        cy.get(this.selectorsList().detalhesProduto).should('be.visible', 'Sauce Labs Bolt T-Shirt')
-        cy.get(this.selectorsList().detalhesPreço).should('be.visible', '$15.99')
+        cy.get(this.selectorsList().detalhesProduto).should('be.visible').contains('Sauce Labs Bolt T-Shirt')
+        cy.get(this.selectorsList().detalhesPreço).should('be.visible').contains('$15.99')
         cy.get(this.selectorsList().backButton).click()
 
     }
 
     fleece_Jacket_Details(){
         cy.get(this.selectorsList().nameProduct).eq(3).should('be.visible', 'Sauce Labs Fleece Jacket').click()
-        cy.get(this.selectorsList().detalhesProduto).should('be.visible', 'Sauce Labs Fleece Jacket')
-        cy.get(this.selectorsList().detalhesPreço).should('be.visible', '$49.99')
+        cy.get(this.selectorsList().detalhesProduto).should('be.visible').contains('Sauce Labs Fleece Jacket')
+        cy.get(this.selectorsList().detalhesPreço).should('be.visible').contains('$49.99')
         cy.get(this.selectorsList().backButton).click()
     }
 
@@ -114,8 +114,8 @@ class ProductsPage {
 
     onesie_Details(){
         cy.get(this.selectorsList().nameProduct).eq(4).should('be.visible', 'Sauce Labs Onesie').click()
-        cy.get(this.selectorsList().detalhesProduto).should('be.visible', 'Sauce Labs Onesie')
-        cy.get(this.selectorsList().detalhesPreço).should('be.visible', '$7.99')
+        cy.get(this.selectorsList().detalhesProduto).should('be.visible').contains('Sauce Labs Onesie')
+        cy.get(this.selectorsList().detalhesPreço).should('be.visible').contains('$7.99')
         cy.get(this.selectorsList().backButton).click()
     }
 
@@ -133,8 +133,8 @@ class ProductsPage {
 
     test_All_Things_TShirt_Details(){
         cy.get(this.selectorsList().nameProduct).eq(5).should('be.visible', 'Test.allTheThing() T-Shirt(Red)').click()
-        cy.get(this.selectorsList().detalhesProduto).should('be.visible', 'Test.allTheThing() T-Shirt(Red)')
-        cy.get(this.selectorsList().detalhesPreço).should('be.visible', '$15.99')
+        cy.get(this.selectorsList().detalhesProduto).should('be.visible').contains('Test.allTheThing')
+        cy.get(this.selectorsList().detalhesPreço).should('be.visible').contains('$15.99')
         cy.get(this.selectorsList().backButton).click()
     }
 

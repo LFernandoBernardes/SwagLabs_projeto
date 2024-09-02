@@ -48,7 +48,7 @@ class LoginPage {
         cy.get(this.selectorsList().passwordField).should('have.value', password)
         cy.get(this.selectorsList().loginButton).click()
         cy.get(this.selectorsList().wrongCredentialAlert).should('be.visible')
-        cy.get('[data-test="error"]').contains('Error: Last Name is required')
+        cy.get('[data-test="error"]').contains('Epic sadface: Username and password do not match any user in this service')
 
     }
 }

@@ -13,7 +13,7 @@ describe('login standard_user', () => {
 
   beforeEach(() =>{
     loginPage.accessLoginPage()
-    loginPage.loginSuccessUser('standard_user','secret_sauce')
+    loginPage.loginSuccessUser('problem_user','secret_sauce')
     productspage.backpack_ADD()
     cartlistpage.visitCart()
     cartlistpage.visitOverview()

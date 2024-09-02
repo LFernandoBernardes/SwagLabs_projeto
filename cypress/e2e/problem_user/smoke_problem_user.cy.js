@@ -9,11 +9,11 @@ const productspage = new ProductsPage()
 const formulariopage = new FormularioPage()
 const cartlistpage = new CartListPage()
 
-describe('login standard_user', () => {
+describe('login problem_user', () => {
 
   beforeEach(() =>{
     loginPage.accessLoginPage()
-    loginPage.loginSuccessUser('standard_user','secret_sauce')
+    loginPage.loginSuccessUser('problem_user','secret_sauce')
   
   })
 
