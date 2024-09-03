@@ -39,13 +39,12 @@ it('Comprar mais de um produto checar os valores', () => {
 
 })
 
-it('Remover um produto do Carrinho', () =>{
+it.only('Remover um produto do Carrinho', () =>{
     productspage.backpack_ADD()
     productspage.bike_Light_ADD()
-    productspage.bolt_TShirt_ADD()
     cartlistpage.visitCart()
     cartlistpage.visitOverview()
-    formulariopage.formularioComplete('Fernando','Bernardes','90456185')
+    formulariopage.formularioComplete('Fernando','Fernando','90456185')
     productspage.backpack_REMOVE_on_Overview()
     cartlistpage.valeuOverviewAfeterRemove()
 

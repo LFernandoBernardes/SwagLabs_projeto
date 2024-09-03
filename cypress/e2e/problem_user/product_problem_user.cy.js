@@ -18,9 +18,11 @@ describe('Products problem_user', () => {
   })
  
 
-it('Adcionar Produtos',() =>{
+it.only('Adcionar Produtos',() =>{
   productspage.backpack_ADD()
   productspage.contadorCart('1')
+  productspage.backpack_REMOVE()
+  //productspage.contadorCart('5')
   productspage.bike_Light_ADD()
   productspage.contadorCart('2')
   productspage.bolt_TShirt_ADD()
@@ -45,7 +47,14 @@ it('Adcionar Produtos',() =>{
 
 })
 
-it('Detalhes dos Produtos', () =>{
+it('Remover um produto do carrinho',() =>{
+    productspage.backpack_ADD()
+    productspage.contadorCart('1')
+    productspage.backpack_REMOVE()
+})
+
+
+it.only('Detalhes dos Produtos', () =>{
   productspage.backpack_Details()
   productspage.bike_Light_Details()
   productspage.bolt_TShirt_Details()

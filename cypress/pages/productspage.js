@@ -34,7 +34,7 @@ class ProductsPage {
 
     backpack_ADD(){
         cy.get(this.selectorsList().buttonProduct).eq(0).click()
-        cy.get(this.selectorsList().buttonProduct).eq(0).should('be.visible', 'REMOVE')
+        cy.get(this.selectorsList().buttonProduct).eq(0).should('be.visible').contains('REMOVE')
         cy.get(this.selectorsList().contadorCart).should('be.visible').contains('1')
 
 
@@ -42,7 +42,7 @@ class ProductsPage {
 
     backpack_REMOVE(){
         cy.get(this.selectorsList().buttonProduct).eq(0).click()
-        cy.get(this.selectorsList().buttonProduct).eq(0).should('be.visible', 'ADD TO CART')
+        cy.get(this.selectorsList().buttonProduct).eq(0).should('be.visible').contains('ADD TO CART')
 
     }
 
@@ -65,24 +65,24 @@ class ProductsPage {
 
     bike_Light_ADD(){
         cy.get(this.selectorsList().buttonProduct).eq(1).click()
-        cy.get(this.selectorsList().buttonProduct).eq(1).should('be.visible', 'REMOVE')
+        cy.get(this.selectorsList().buttonProduct).eq(1).should('be.visible').contains('REMOVE')
         
     }
 
     bike_Light_REMOVE(){
         cy.get(this.selectorsList().buttonProduct).eq(1).click()
-        cy.get(this.selectorsList().buttonProduct).eq(1).should('be.visible', 'ADD TO CART')
+        cy.get(this.selectorsList().buttonProduct).eq(1).should('be.visible').contains('ADD TO CART')
     }
 
 
     bolt_TShirt_ADD(){
         cy.get(this.selectorsList().buttonProduct).eq(2).click()
-        cy.get(this.selectorsList().buttonProduct).eq(2).should('be.visible', 'REMOVE')
+        cy.get(this.selectorsList().buttonProduct).eq(2).should('be.visible').contains('REMOVE')
     }
 
     bolt_TShirt_REMOVE(){
         cy.get(this.selectorsList().buttonProduct).eq(2).click()
-        cy.get(this.selectorsList().buttonProduct).eq(2).should('be.visible', 'ADD TO CART')
+        cy.get(this.selectorsList().buttonProduct).eq(2).should('be.visible').contains('ADD TO CART')
     }
 
     bolt_TShirt_Details(){
@@ -102,12 +102,12 @@ class ProductsPage {
 
     fleece_Jacket_ADD(){
         cy.get(this.selectorsList().buttonProduct).eq(3).click()
-        cy.get(this.selectorsList().buttonProduct).eq(3).should('be.visible', 'REMOVE')
+        cy.get(this.selectorsList().buttonProduct).eq(3).should('be.visible').contains('REMOVE')
     }
 
     fleece_Jacket_REMOVE(){
         cy.get(this.selectorsList().buttonProduct).eq(3).click()
-        cy.get(this.selectorsList().buttonProduct).eq(3).should('be.visible', 'ADD TO CART')
+        cy.get(this.selectorsList().buttonProduct).eq(3).should('be.visible').contains('ADD TO CART')
     }
 
   
@@ -122,12 +122,12 @@ class ProductsPage {
     
     onesie_ADD(){
         cy.get(this.selectorsList().buttonProduct).eq(4).click()
-        cy.get(this.selectorsList().buttonProduct).eq(4).should('be.visible', 'REMOVE')
+        cy.get(this.selectorsList().buttonProduct).eq(4).should('be.visible').contains('REMOVE')
     }
 
     onesie_REMOVE(){
         cy.get(this.selectorsList().buttonProduct).eq(4).click()
-        cy.get(this.selectorsList().buttonProduct).eq(4).should('be.visible', 'ADD TO CART')
+        cy.get(this.selectorsList().buttonProduct).eq(4).should('be.visible').contains('ADD TO CART')
 
     }
 
@@ -140,11 +140,11 @@ class ProductsPage {
 
     test_All_Things_TShirt_ADD(){
         cy.get(this.selectorsList().buttonProduct).eq(5).click()
-        cy.get(this.selectorsList().buttonProduct).eq(5).should('be.visible', 'REMOVE')
+        cy.get(this.selectorsList().buttonProduct).eq(5).should('be.visible').contains('REMOVE')
     }
     test_All_Things_TShirt_REMOVE(){
         cy.get(this.selectorsList().buttonProduct).eq(5).click()
-        cy.get(this.selectorsList().buttonProduct).eq(5).should('be.visible', 'ADD TO CART')
+        cy.get(this.selectorsList().buttonProduct).eq(5).should('be.visible').contains('ADD TO CART')
 
     }
 
