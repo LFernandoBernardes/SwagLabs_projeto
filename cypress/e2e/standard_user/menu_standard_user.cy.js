@@ -14,7 +14,7 @@ describe('Barra Menu standard_user', () => {
     
     })
 
-    it('Barra Menu e Botões', () => {
+    it('Abrir Barra Menu ', () => {
         barramenu.checkMenu()
 
     })

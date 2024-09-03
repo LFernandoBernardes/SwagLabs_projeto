@@ -18,7 +18,7 @@ describe('Products standard_user', () => {
   })
  
 
-it('Adcionar Produtos',() =>{
+it('Adcionar Produtos e Remover',() =>{
   productspage.backpack_ADD()
   productspage.contadorCart('1')
   productspage.bike_Light_ADD()
