@@ -1,7 +1,7 @@
 # SwagLabs_projeto
 
 ### Introdução
-Este é um projeto de estudo de QA (Garantia de Qualidade) para o site open-source SwagLabs. O objetivo deste projeto é planejar o documentar os requisitos de negócio; critérios de aceites; planejar e executar cenários de teste manuais e automatizados; gerar relatórios de Testes.
+Este é um projeto de estudo de QA (Garantia de Qualidade) para o site open-source SwagLabs. O objetivo deste projeto é a implementação de qualidade para deste site, abordando cada etapa do projeto. Com isso foi feito documentação dos requisitos de negócio; critérios de aceites; planejar e executar cenários de teste manuais e automatizados e relatórios de Testes.
 
 ![Capa_SwagLaabs](/Apresentações/Capa_SwagLabs.png)
 
